@@ -93,7 +93,7 @@ python compute_gate_v4.py \
 
 ### 정량적 결과 (Per-Gaussian AUROC)
 
-#### MAD-Sim (학습 데이터셋)
+
 
 <img width="351" height="95" alt="image" src="https://github.com/user-attachments/assets/fb18adfb-02bc-4123-91d3-214cd9263781" />
 
