@@ -6,12 +6,12 @@
 
 ## 프로젝트 요약 (Project Summary)
 
-본 연구는 **3D Gaussian Splatting(3DGS)** 기반의 산업 이상 탐지 프레임워크를 제안합니다. 기존 방법들이 3D 표현을 2D 이미지로 렌더링한 후 탐지를 수행하는 것과 달리, 본 프레임워크는 3D Gaussian 공간에서 직접 이상을 탐지하여 렌더링으로 인한 정보 손실을 원천 차단합니다.
+본 연구는 **3D Gaussian Splatting(3DGS)** 기반의 산업 이상 탐지 프레임워크를 제안합니다. 기존 방법들이 3D 표현을 2D 이미지로 렌더링한 후 탐지를 수행하는 것과 달리, 본 프레임워크는 3D Gaussian 공간에서 직접 이상을 탐지하여 렌더링으로 인한 시간을 단축시키고 정보 손실을 방지하고자 합니다.
 
 ### 핵심 기여
 
 - **렌더링 없는 탐지**: `xyz, f_dc, opacity, scale, rotation` 등 14차원 Gaussian 파라미터에서 직접 이상 스코어를 계산합니다.
-- **MAE 재구성 브랜치**: Point-MAE 기반의 마스크 오토인코더로, FPS+KNN 토크나이제이션(`G=1024, K=32`, 마스킹 비율 60%)을 적용합니다. 추론 시 반복 마스킹(`n_iter=40`)으로 안정적인 이상 스코어를 획득합니다.
+- **MAE 재구성 브랜치**: Point-MAE 기반의 마스크 오토인코더로, FPS+KNN Tokenization(`G=1024, K=32`, 마스킹 비율 60%)을 적용합니다. 추론 시 반복 마스킹(`n_iter=40`)으로 안정적인 이상 스코어를 획득합니다.
 - **KDTree 밀도 브랜치**: 정상/테스트 포인트 클라우드 간 지역 밀도를 비교하여 구조적 이상(버르, 누락)을 탐지합니다. 적응 반경(`r = 1.5 × 평균 13-NN 거리`)을 사용합니다.
 - **하이브리드 게이팅**: 샘플별 기하 통계(ratio, concentration, sharpness)를 기반으로 MAE 스코어와 밀도 스코어 중 하나를 선택합니다.
 
@@ -33,7 +33,7 @@
 
 ```bash
 # 레포지토리 클론
-git clone https://github.com/YOUR_USERNAME/rendering_free_3dgs_anomaly_detection.git
+git clone https://github.com/chae-lee-bot/rendering_free_3dgs_anomaly_detection.git
 cd rendering_free_3dgs_anomaly_detection
 
 # 가상환경 생성 및 활성화
