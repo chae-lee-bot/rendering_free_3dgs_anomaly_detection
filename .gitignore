@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.pt
+*.pth
+*.npz
+*.npy
+output/
+.DS_Store
+.vscode/
+.idea/
