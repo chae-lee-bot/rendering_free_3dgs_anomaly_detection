@@ -68,7 +68,7 @@ data/
 └── Anomaly_ShapeNet/    
 ```
 
-> 데이터 다운로드: [Google Drive](#) *(링크 추가 예정)*
+> 데이터 다운로드: [Google Drive] https://drive.google.com/drive/folders/1bFZRKoUekXcvtJZ2oppDKeiyez4hu1yx?usp=sharing
 
 ### 학습
 
