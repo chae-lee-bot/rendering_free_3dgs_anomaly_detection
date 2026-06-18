@@ -95,11 +95,8 @@ python compute_gate_v4.py \
 
 #### MAD-Sim (학습 데이터셋)
 
-| 방법 | Burrs | Stains | Missing | **전체** |
-|---|---|---|---|---|
-| MAE only | - | - | - | - |
-| Density only | - | - | - | - |
-| **Hybrid Gating (제안)** | **0.807** | **0.755** | **0.813** | **0.792** |
+<img width="351" height="95" alt="image" src="https://github.com/user-attachments/assets/fb18adfb-02bc-4123-91d3-214cd9263781" />
+
 
 
 ---
