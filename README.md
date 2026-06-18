@@ -11,7 +11,7 @@
 ### 핵심 기여
 
 - **렌더링 없는 탐지**: `xyz, f_dc, opacity, scale, rotation` 등 14차원 Gaussian 파라미터에서 직접 이상 스코어를 계산합니다.
-- **MAE 재구성 브랜치**: Point-MAE 기반의 마스크 오토인코더로, FPS+KNN Tokenization(`G=1024, K=32`, 마스킹 비율 60%)을 적용합니다. 추론 시 반복 마스킹(`n_iter=40`)으로 안정적인 이상 스코어를 획득합니다.
+- **MAE 재구성 브랜치**: Point-MAE 기반의 masking autoencoder로, FPS+KNN Tokenization(`G=1024, K=32`, 마스킹 비율 60%)을 적용합니다. 추론 시 반복 마스킹(`n_iter=40`)으로 안정적인 이상 스코어를 획득합니다.
 - **KDTree 밀도 브랜치**: 정상/테스트 포인트 클라우드 간 지역 밀도를 비교하여 구조적 이상(버르, 누락)을 탐지합니다. 적응 반경(`r = 1.5 × 평균 13-NN 거리`)을 사용합니다.
 - **하이브리드 게이팅**: 샘플별 기하 통계(ratio, concentration, sharpness)를 기반으로 MAE 스코어와 밀도 스코어 중 하나를 선택합니다.
 
