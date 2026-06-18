@@ -122,4 +122,4 @@ python compute_gate_v4.py \
 - [Point-MAE](https://github.com/Pang-Yatian/Point-MAE)
 - [MAD-Sim / PAD](https://github.com/EricLee0224/PAD)
 - [Anomaly-ShapeNet](https://github.com/Chopper-233/Anomaly-ShapeNet) (Wenqiao Li et al., CVPR 2024)
-- [MulSen-AD](https://github.com/hito0448/MulSen-AD) (Wenqiao Li et al., CVPR 2025)
+- [MulSen-AD](https://github.com/ZZZBBBZZZ/MulSen-AD) (Wenqiao Li et al., CVPR 2025)
